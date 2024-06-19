@@ -1,13 +1,17 @@
 package se.lexicon;
 
 
+import javax.swing.*;
+import javax.xml.stream.events.Namespace;
+
 public class App {
     public static void main(String[] args) {
 
-        int size = Students.getSize();
+        int[] size = new int[]{5, 6, 5, 8, 9, 4};
         System.out.println(size);
-        Students.setNames(new String[]{"Erik Svensson", "Mehrdad Javan"});
-        System.out.println(Students.getSize());
-        // call more methods as needed
     }
-}
+
+
+
+    }
+

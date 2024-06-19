@@ -20,6 +20,12 @@ public static void ex1(){
     System.out.println(numbers.length);
 }
 
+public static void ex2(){
+
+        String[] names = new String[3];
+        String[] name = new String[]{"Mark", "Lund", "George"};
+        String[] newNames = new String[]{"John", "David", "Luk"};
+}
 
 
 
