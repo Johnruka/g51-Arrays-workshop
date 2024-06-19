@@ -1,23 +1,29 @@
 package se.lexicon;
 
-/**
- * The NameRepository class provides methods to manage a list of names.
- * It offers functionalities such as adding, removing, finding, and updating names.
- */
-public class NameRepository {
 
-    private static String[] names = new String[0];
+public class Students {
+
+    public static void main(String[] args) {
 
 
-    /**
-     * Retrieves the current size of the names array.
-     *
-     * @return The number of elements in the names array.
-     */
-    public static int getSize() {
-        //todo: PART 1: implement getSize method
-        return 0;
+
+    String[] names = new String[2];
+
+    String[] Students = {"John Baptist", "Lund Strong"};
+        System.out.println(names.length);
+
+}
+
+
+String[] numbers = new String [5];
+    int[] number = new int[] {6, 8, 2, 5, 9};
+
+
+
+
     }
+
+
 
 
     /**
@@ -119,7 +125,5 @@ public class NameRepository {
     public static boolean remove(String fullName) {
         //todo: PART 4: implement remove method
         return false;
-    }
-
 
 }
