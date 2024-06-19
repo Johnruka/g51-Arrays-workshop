@@ -7,16 +7,22 @@ public class Students {
 
 
 
-    String[] names = new String[2];
+        String[] names = new String[2];
 
     String[] Students = {"John Baptist", "Lund Strong"};
         System.out.println(names.length);
 
 }
 
-
-String[] numbers = new String [5];
+public static void ex1(){
+    String[] numbers = new String [5];
     int[] number = new int[] {6, 8, 2, 5, 9};
+    System.out.println(numbers.length);
+}
+
+
+
+
 
 
 

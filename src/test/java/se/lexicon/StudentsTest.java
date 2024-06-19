@@ -8,24 +8,19 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * JUnit 5 tests for the NameRepository class.
  */
-public class NameRepositoryTest {
+public class StudentsTest {
 
-    /**
-     * Setup method executed before each test to initialize the NameRepository with known data.
-     */
-    @BeforeEach
+
+
     public void setUp() {
-        NameRepository.clear();
-        NameRepository.setNames(new String[]{"Erik Svensson", "Mehrdad Javan"});
+        Students.clear();
+        Students.setNames(new String[]{"Erik Svensson", "Mehrdad Javan"});
     }
 
-    /**
-     * Test for getSize method.
-     * Checks that getSize returns the correct number of elements in the names array.
-     */
+
     @Test
     public void testGetSize() {
-        int size = NameRepository.getSize();
+        int size = Students.getSize();
         assertEquals(2, size);
     }
 
@@ -35,8 +30,8 @@ public class NameRepositoryTest {
      */
     @Test
     public void testSetNames() {
-        NameRepository.setNames(new String[]{"Alice Wonderland", "Bob Builder"});
-        String[] names = NameRepository.findAll();
+        Students.setNames(new String[]{"Alice Wonderland", "Bob Builder"});
+        String[] names = Students.findAll();
         assertArrayEquals(new String[]{"Alice Wonderland", "Bob Builder"}, names);
     }
 
@@ -46,8 +41,8 @@ public class NameRepositoryTest {
      */
     @Test
     public void testClear() {
-        NameRepository.clear();
-        assertEquals(0, NameRepository.getSize());
+        Students.clear();
+        assertEquals(0, Students.getSize());
     }
 
     /**
@@ -56,7 +51,7 @@ public class NameRepositoryTest {
      */
     @Test
     public void testFindAll() {
-        String[] names = NameRepository.findAll();
+        String[] names = Students.findAll();
         assertArrayEquals(new String[]{"Erik Svensson", "Mehrdad Javan"}, names);
     }
 
@@ -66,9 +61,9 @@ public class NameRepositoryTest {
      */
     @Test
     public void testFind() {
-        String name = NameRepository.find("Mehrdad Javan");
+        String name = Students.find("Mehrdad Javan");
         assertEquals("Mehrdad Javan", name);
-        assertNull(NameRepository.find("Non Existent"));
+        assertNull(Students.find("Non Existent"));
     }
 
     /**
@@ -77,10 +72,10 @@ public class NameRepositoryTest {
      */
     @Test
     public void testAdd() {
-        boolean added = NameRepository.add("New Person");
+        boolean added = Students.add("New Person");
         assertTrue(added);
-        assertEquals(3, NameRepository.getSize());
-        assertFalse(NameRepository.add("Mehrdad Javan")); // Already exists
+        assertEquals(3, Students.getSize());
+        assertFalse(Students.add("Mehrdad Javan")); // Already exists
     }
 
     /**
@@ -89,9 +84,9 @@ public class NameRepositoryTest {
      */
     @Test
     public void testFindByFirstName() {
-        String[] result = NameRepository.findByFirstName("Mehrdad");
+        String[] result = Students.findByFirstName("Mehrdad");
         assertArrayEquals(new String[]{"Mehrdad Javan"}, result);
-        String[] emptyResult = NameRepository.findByFirstName("Non Existent");
+        String[] emptyResult = Students.findByFirstName("Non Existent");
         assertArrayEquals(new String[]{}, emptyResult);
     }
 
@@ -101,9 +96,9 @@ public class NameRepositoryTest {
      */
     @Test
     public void testFindByLastName() {
-        String[] result = NameRepository.findByLastName("Javan");
+        String[] result = Students.findByLastName("Javan");
         assertArrayEquals(new String[]{"Mehrdad Javan"}, result);
-        String[] emptyResult = NameRepository.findByLastName("Non Existent");
+        String[] emptyResult = Students.findByLastName("Non Existent");
         assertArrayEquals(new String[]{}, emptyResult);
     }
 
@@ -113,11 +108,11 @@ public class NameRepositoryTest {
      */
     @Test
     public void testUpdate() {
-        boolean updated = NameRepository.update("Erik Svensson", "Erik Johnson");
+        boolean updated = Students.update("Erik Svensson", "Erik Johnson");
         assertTrue(updated);
-        assertEquals("Erik Johnson", NameRepository.find("Erik Johnson"));
-        assertFalse(NameRepository.update("Non Existent", "New Name"));
-        assertFalse(NameRepository.update("Nickan Javan", "Mehrdad Javan")); // "Mehrdad Javan" already exists
+        assertEquals("Erik Johnson", Students.find("Erik Johnson"));
+        assertFalse(Students.update("Non Existent", "New Name"));
+        assertFalse(Students.update("Nickan Javan", "Mehrdad Javan")); // "Mehrdad Javan" already exists
     }
 
     /**
@@ -126,9 +121,9 @@ public class NameRepositoryTest {
      */
     @Test
     public void testRemove() {
-        boolean removed = NameRepository.remove("Mehrdad Javan");
+        boolean removed = Students.remove("Mehrdad Javan");
         assertTrue(removed);
-        assertNull(NameRepository.find("Mehrdad Javan"));
-        assertFalse(NameRepository.remove("Non Existent"));
+        assertNull(Students.find("Mehrdad Javan"));
+        assertFalse(Students.remove("Non Existent"));
     }
 }
