@@ -35,7 +35,7 @@ public class Students {
 
     public static void ex3(){
 
-        int[] numbers = new int[]{6, 8, 4, 5, 9};
+        int[] numbers = new int[]{6, 8, 4, 7, 9};
 
     }
 
