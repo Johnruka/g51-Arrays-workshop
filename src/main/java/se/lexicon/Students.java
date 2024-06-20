@@ -15,13 +15,13 @@ public class Students {
 
     }
 
-    public static void ex1() {
+    public static void ex01() {
         String[] numbers = new String[5];
         int[] number = new int[]{6, 8, 2, 5, 9};
         System.out.println(numbers.length);
     }
 
-    public static void ex2() {
+    public static void ex02() {
 
         String[] names = new String[3];
         String[] name = new String[]{"Mark", "Lund", "George"};
@@ -33,32 +33,35 @@ public class Students {
         System.out.println(realcopy);
     }
 
-    public static void ex3(){
+    public static void ex03(){
 
-        int[] numbers = new int[]{6, 8, 4, 7, 9};
-        int[] newArray = new int[5];
-        numbers[0] = 0;
-        numbers[1] = 1;
-        numbers[2] = 2;
-        numbers[3] = 3;
-        numbers[4] = 4;
+        int[] originalArray = {6, 8, 10, 5, 1};
+        for (int element : originalArray){
+            System.out.print(element + " ");
+        }
+        System.out.println();
+
+        int[] newArray = new int[originalArray.length];
+        int i = 0;
+        originalArray [i] = newArray [i];
+
+        for (int element : newArray){
+            System.out.print(element + " ");
+        }
+        System.out.println();
 
     }
 
-}
+    public static void EX04(){
 
-/**
- * Returns all names in a new array (Retrieves a copy of the names array).
- *
- * @return A new array containing all elements from the names array.
- */
-public static String[] findAll() {
-    //todo: PART 1: implement findAll method
-    return null;
-}
+        String[] names = {"John", "Luk", "Lund", "George"};
+        String[] copy = Arrays.copyOf(names, names.length);
 
+        System.out.println("Original:\t" + Arrays.toString(names));
+        System.out.println("    Copy:\t" + Arrays.toString(copy));
 
-/**
+    }
+    /**
  * Finds a name that matches the given fullName case-insensitively.
  *
  * @param fullName The full name to search for.
