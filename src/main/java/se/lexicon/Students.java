@@ -37,6 +37,11 @@ public class Students {
 
         int[] numbers = new int[]{6, 8, 4, 7, 9};
         int[] newArray = new int[5];
+        numbers[0] = 0;
+        numbers[1] = 1;
+        numbers[2] = 2;
+        numbers[3] = 3;
+        numbers[4] = 4;
 
     }
 
