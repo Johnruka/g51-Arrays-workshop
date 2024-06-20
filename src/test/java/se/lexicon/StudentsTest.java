@@ -10,9 +10,12 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class StudentsTest {
 
+    String[] students = new String[2];
+
 
 
     public void setUp() {
+        ProcessEnvironment.CheckedEntrySet Students;
         Students.clear();
         Students.setNames(new String[]{"Erik Svensson", "Mehrdad Javan"});
     }
