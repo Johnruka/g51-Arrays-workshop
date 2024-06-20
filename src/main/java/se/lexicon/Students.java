@@ -35,18 +35,11 @@ public class Students {
 
     public static void ex3(){
 
+        int[] numbers = new int[]{6, 8, 4, 5, 9};
+
     }
 
 }
-
-
-/**
- * Clears the names array by creating a new empty array.
- */
-public static void clear() {
-    //todo: PART 1: implement clear method
-}
-
 
 /**
  * Returns all names in a new array (Retrieves a copy of the names array).
