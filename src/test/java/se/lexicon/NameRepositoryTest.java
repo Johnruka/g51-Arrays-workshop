@@ -1,6 +1,5 @@
 package se.lexicon;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -8,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * JUnit 5 tests for the NameRepository class.
  */
-public class StudentsTest {
+public class NameRepositoryTest {
 
     String[] students = new String[2];
 
@@ -17,7 +16,7 @@ public class StudentsTest {
     public void setUp() {
         ProcessEnvironment.CheckedEntrySet Students;
         Students.clear();
-        Students.setNames(new String[]{"Erik Svensson", "Mehrdad Javan"});
+        Students.setNames(new String[]{"Erik Stevenson", "Mehrdad Javan"});
     }
 
 
