@@ -1,6 +1,7 @@
 package se.lexicon;
 
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class names {
@@ -63,9 +64,39 @@ public class names {
 
     public static void ex05() {
 
+        String[] names = {"John", "Luk", "Lund", "George"};
+
+        System.out.println("Unsorted Array:\t" + Arrays.toString(names));
+
+        Arrays.sort(names);
+        System.out.println("  Sorted Array:\t" + Arrays.toString(names));
+
 
         }
-    }
+
+        public static void ex06() {
+
+        String[]originalArray = {"John","Luk","Lund"};
+        for (String element : originalArray) {
+            System.out.print(element + " ");
+
+            System.out.println();
+
+            String[] newArray = new String[originalArray.length + 1];
+
+            int i;
+            for (i = 0; i < originalArray.length; i++) ;{
+            newArray[i] = originalArray[i];
+            }
+            newArray[newArray.length - 1] = "George";
+
+
+
+            for (String elememt : newArray) {
+                System.out.print(elememt + " ");
+            }
+            System.out.println();
+        }
 
 }
 
@@ -134,4 +165,4 @@ public class names {
     }
 
 
-}
+
