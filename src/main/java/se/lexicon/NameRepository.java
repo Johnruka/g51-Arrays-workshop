@@ -97,6 +97,9 @@ public class names {
             }
             System.out.println();
         }
+    }
+
+    public static void ex07() {
 
 }
 
