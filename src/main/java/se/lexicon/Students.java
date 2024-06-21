@@ -63,23 +63,16 @@ public class Students {
 
     public static void ex05() {
 
-        String[] names = {"John", "Luk", "Eric"};
-        Arrays.sort(names);
-
-        String key;
-        Arrays.binarySearch(names, key: "Luk");
 
         }
     }
+
 }
+
 }
 
 
-
-    }
-
-
-    /**
+/**
      * Adds a new fullName to the names array if it doesn't already exist.
      *
      * @param fullName The full name to add.
