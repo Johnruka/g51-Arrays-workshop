@@ -103,16 +103,7 @@ public class names {
 }
 
 
-/**
-     * Adds a new fullName to the names array if it doesn't already exist.
-     *
-     * @param fullName The full name to add.
-     * @return True if the fullName is added successfully; false if it already exists.
-     */
-    public static boolean add(String fullName) {
-        //todo: PART 2: implement add method
-        return false;
-    }
+
 
 
     /**
