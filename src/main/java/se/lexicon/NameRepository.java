@@ -3,7 +3,7 @@ package se.lexicon;
 
 import java.util.Arrays;
 
-public class Students {
+public class names {
 
     public static void main(String[] args) {
 
