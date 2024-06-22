@@ -112,50 +112,30 @@ public class names {
         }
         return firstNameTofind;
     }
-}
+};
+
+public String findNames(String lastNameTofind) {
+    String[] names = {"John"};
+    for (String name : names) {
+        if (name.equalsIgnoreCase(lastNameTofind)) {
+            System.out.print(name);
+        }
+        System.out.println();
+    }
+    return lastNameTofind;
+
+
+
+    String[] originalName = {"John Lund"};
+    String[] newName = {"David Lund"};
+    newName = originalName;
 
 
 
 
-/**
- * Find all names that match the given lastName.
- *
- * @param lastName The last name to search for.
- * @return An array containing all matching names.
- * <p>
- * Updates a name in the names array from the original name to the updated name.
- * @param original    The original name to update.
- * @param updatedName The updated name to set.
- * @return True if the name is updated successfully; false if the updated name already exists or the original name is not found.
- * <p>
- * Removes a name from the names array, case-insensitively.
- * @param fullName The full name to remove.
- * @return True if the name is removed successfully; false if the name is not found in the array.
- * <p>
- * Updates a name in the names array from the original name to the updated name.
- * @param original    The original name to update.
- * @param updatedName The updated name to set.
- * @return True if the name is updated successfully; false if the updated name already exists or the original name is not found.
- * <p>
- * Removes a name from the names array, case-insensitively.
- * @param fullName The full name to remove.
- * @return True if the name is removed successfully; false if the name is not found in the array.
- */
-/**
- * Updates a name in the names array from the original name to the updated name.
- *
- * @param original    The original name to update.
- * @param updatedName The updated name to set.
- * @return True if the name is updated successfully; false if the updated name already exists or the original name is not found.
- */
 
 
-/**
- * Removes a name from the names array, case-insensitively.
- *
- * @param fullName The full name to remove.
- * @return True if the name is removed successfully; false if the name is not found in the array.
- */
+
 
 
 
